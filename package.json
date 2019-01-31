@@ -1,7 +1,12 @@
 {
   "name": "react-fit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "dependencies": {
     "@types/jest": "23.3.13",
     "@types/node": "10.12.18",
