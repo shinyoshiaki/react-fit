@@ -3,7 +3,7 @@ import * as React from "react";
 import Measure from "react-measure";
 
 export default class MeasureWrap extends React.Component<
-  { target: (width: number, height: number) => any },
+  { target: (size: { width: number; height: number }) => any },
   { width: number; height: number }
 > {
   constructor(props: any) {
@@ -23,7 +23,7 @@ export default class MeasureWrap extends React.Component<
       >
         {({ measureRef }) => (
           <div ref={measureRef} style={{ width: "100%", height: "100%" }}>
-            {this.props.target(width, height)}
+            {this.props.target({ width, height })}
           </div>
         )}
       </Measure>
